@@ -1,5 +1,5 @@
 class TicTacToe
-def initialize
+  def initialize
     @board = Array.new(9, " ")
   end
 
@@ -29,6 +29,7 @@ def initialize
   def move(ind, token = "x")
     @board[ind] = token 
   end
+  
   def position_taken?(ind)
     @board[ind] == " "? false : true 
   end
